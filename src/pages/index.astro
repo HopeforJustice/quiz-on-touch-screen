@@ -1,0 +1,179 @@
+---
+import Quiz from "../components/Quiz.jsx";
+---
+
+<html class="p-0 m-0 box-border overflow-hidden" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Quiz on touch screen</title>
+	</head>
+	<body
+		class="bg-[#212322] text-white relative w-[100%] h-[100%] min-w-[1080px] min-h-[1920px] overflow-hidden font-apercu"
+	>
+		<Quiz client:only="react" />
+	</body>
+</html>
+
+<style is:global>
+	/* apercu-regular-pro */
+
+	@font-face {
+		font-family: "apercu-reg";
+		src: url("/fonts/apercu-regular-pro.eot");
+		src:
+			url("/fonts/apercu-regular-pro.eot?#iefix") format("embedded-opentype"),
+			url("/fonts/apercu-regular-pro.woff2") format("woff2"),
+			url("/fonts/apercu-regular-pro.woff") format("woff"),
+			url("/fonts/apercu-regular-pro.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	/* apercu-bold-pro */
+
+	@font-face {
+		font-family: "apercu-bold";
+		src: url("/fonts/apercu-bold-pro.eot");
+		src:
+			url("/fonts/apercu-bold-pro.eot?#iefix") format("embedded-opentype"),
+			url("/fonts/apercu-bold-pro.woff2") format("woff2"),
+			url("/fonts/apercu-bold-pro.woff") format("woff"),
+			url("/fonts/apercu-bold-pro.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	/* apercu-italic-pro */
+
+	@font-face {
+		font-family: "apercu-italic";
+		src: url("/fonts/apercu-italic-pro.eot");
+		src:
+			url("/fonts/apercu-italic-pro.eot?#iefix") format("embedded-opentype"),
+			url("/fonts/apercu-italic-pro.woff2") format("woff2"),
+			url("/fonts/apercu-italic-pro.woff") format("woff"),
+			url("/fonts/apercu-italic-pro.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	/* fk-screamer-legacy */
+
+	@font-face {
+		font-family: "fk-screamer";
+		src: url("/fonts/FKScreamerLegacy-Upright.woff2");
+		src:
+			url("/fonts/FKScreamerLegacy-Upright.woff2") format("woff2"),
+			url("/fonts/FKScreamerLegacy-Upright.woff") format("woff"),
+			url("/fonts/FKScreamerLegacy-Upright.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.video {
+		-webkit-clip-path: polygon(
+			36.223% 0%,
+			36.223% 0%,
+			35.788% 0.041%,
+			35.431% 0.158%,
+			35.145% 0.346%,
+			34.922% 0.598%,
+			34.755% 0.908%,
+			34.635% 1.269%,
+			34.556% 1.676%,
+			34.508% 2.12%,
+			34.485% 2.597%,
+			34.48% 3.1%,
+			34.48% 17.984%,
+			34.48% 17.984%,
+			34.442% 18.487%,
+			34.333% 18.964%,
+			34.158% 19.409%,
+			33.924% 19.815%,
+			33.636% 20.177%,
+			33.301% 20.487%,
+			32.924% 20.739%,
+			32.51% 20.927%,
+			32.067% 21.044%,
+			31.6% 21.085%,
+			2.88% 21.085%,
+			2.88% 21.085%,
+			2.413% 21.125%,
+			1.97% 21.243%,
+			1.556% 21.431%,
+			1.179% 21.683%,
+			0.844% 21.993%,
+			0.556% 22.354%,
+			0.322% 22.76%,
+			0.147% 23.205%,
+			0.038% 23.682%,
+			0% 24.185%,
+			0% 96.9%,
+			0% 96.9%,
+			0.038% 97.403%,
+			0.147% 97.88%,
+			0.321% 98.324%,
+			0.555% 98.731%,
+			0.843% 99.092%,
+			1.179% 99.402%,
+			1.556% 99.654%,
+			1.969% 99.842%,
+			2.412% 99.959%,
+			2.88% 100%,
+			54.686% 100%,
+			54.686% 100%,
+			55.153% 99.959%,
+			55.596% 99.842%,
+			56.009% 99.654%,
+			56.387% 99.402%,
+			56.722% 99.092%,
+			57.01% 98.731%,
+			57.244% 98.324%,
+			57.419% 97.88%,
+			57.528% 97.403%,
+			57.566% 96.9%,
+			57.566% 82.016%,
+			57.566% 82.016%,
+			57.604% 81.513%,
+			57.713% 81.036%,
+			57.887% 80.591%,
+			58.122% 80.185%,
+			58.41% 79.823%,
+			58.745% 79.513%,
+			59.122% 79.261%,
+			59.536% 79.073%,
+			59.979% 78.956%,
+			60.445% 78.915%,
+			97.12% 78.915%,
+			97.12% 78.915%,
+			97.587% 78.875%,
+			98.03% 78.757%,
+			98.444% 78.569%,
+			98.821% 78.317%,
+			99.156% 78.007%,
+			99.444% 77.646%,
+			99.678% 77.24%,
+			99.853% 76.795%,
+			99.962% 76.318%,
+			100% 75.815%,
+			100% 3.1%,
+			100% 3.1%,
+			99.962% 2.597%,
+			99.853% 2.12%,
+			99.678% 1.676%,
+			99.444% 1.269%,
+			99.156% 0.908%,
+			98.821% 0.598%,
+			98.444% 0.346%,
+			98.03% 0.158%,
+			97.587% 0.041%,
+			97.12% 0%,
+			36.223% 0%
+		);
+		z-index: 1;
+		object-fit: cover;
+	}
+</style>
