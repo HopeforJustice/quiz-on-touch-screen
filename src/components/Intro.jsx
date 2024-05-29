@@ -28,7 +28,7 @@ const Intro = (props) => {
 
 			<Button
 				text="Take the quiz"
-				styles={buttonStyles}
+				className={buttonStyles}
 				onClick={props.onStartQuiz}
 			/>
 		</>

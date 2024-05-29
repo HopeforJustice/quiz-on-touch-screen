@@ -1,9 +1,9 @@
 import React from "react";
 
-const QuestionSvg = () => {
+const QuestionSvg = ({ className }) => {
 	return (
 		<svg
-			className="absolute top-[40px] left-[40px]"
+			className={className}
 			xmlns="http://www.w3.org/2000/svg"
 			width="981"
 			height="1829.167"
