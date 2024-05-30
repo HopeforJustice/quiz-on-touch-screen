@@ -1,8 +1,9 @@
 import React from "react";
 
-const Logo = () => {
+const Logo = (onClick) => {
 	return (
 		<svg
+			onClick={() => window.location.reload()}
 			id="Group_7393"
 			data-name="Group 7393"
 			xmlns="http://www.w3.org/2000/svg"

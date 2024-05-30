@@ -4,6 +4,7 @@ import Intro from "./Intro";
 import Question from "./Question";
 import Logo from "./Logo";
 import quizData from "../utils/quizData";
+import Result from "./Result";
 
 const Quiz = () => {
 	const [currentView, setCurrentView] = useState("intro");
@@ -93,19 +94,7 @@ const Quiz = () => {
 						isLastQuestion={currentQuestionIndex === quizData.length - 1}
 					/>
 				)}
-				{showResult && (
-					<div className="result">
-						<h2>
-							Your Score: {score} / {quizData.length}
-						</h2>
-						<button
-							onClick={() => window.location.reload()}
-							className="bg-blue-500 text-white px-4 py-2 rounded"
-						>
-							Restart Quiz
-						</button>
-					</div>
-				)}
+				{showResult && <Result score={score} quizData={quizData} />}
 			</div>
 			<Logo />
 		</>
