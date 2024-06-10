@@ -34,8 +34,9 @@ const Result = ({ score, quizData }) => {
 					JOIN THE MOVEMENT
 				</h3>
 				<p className="secondGsap opacity-0 text-[33px] max-w-[700px] mb-[30px]">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-					dolorum consequuntur blanditiis id quos?
+					Thank you for taking our quiz – for taking time to get more informed
+					about modern slavery and human trafficking. Find out how you can get
+					involved in the anti-trafficking movement by scanning the QR code.
 				</p>
 				<Button
 					className="secondGsap opacity-0"
