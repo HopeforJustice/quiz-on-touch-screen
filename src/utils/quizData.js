@@ -3,7 +3,7 @@ const quizData = [
 		questionText:
 			"How many people are estimated to be victims of modern slavery globally?",
 		questionNumber: "01",
-		options: ["49.6 million", "496 thousand", "4.96 million", "49 thousand"],
+		options: ["49.6 million", "496,000", "4.96 million", "49,000"],
 		correctAnswer: "49.6 million",
 		explanationText:
 			"According to the latest Global Estimates of Modern Slavery, there are 49.6 million people living in modern slavery. But this is a hidden crime and many cases go unreported, so the actual number is believed to be much higher.",
