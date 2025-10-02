@@ -4,7 +4,7 @@ import Arrow from "./Arrow";
 
 const Button = forwardRef((props, ref) => {
 	const defaultClass =
-		"bg-[#D6001C] rounded-[21px] px-[35px] py-[28px] text-[36px] font-apercu-bold flex gap-[20px] items-center justify-center";
+		"bg-[#D6001C] rounded-[21px] px-[30px] py-[20px] text-[27px] font-apercu-bold flex gap-[20px] items-center justify-center";
 
 	return (
 		<>

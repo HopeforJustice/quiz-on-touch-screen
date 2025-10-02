@@ -78,7 +78,7 @@ const Quiz = () => {
 
 	return (
 		<>
-			<div className="w-[1080px] h-[1920px]" ref={containerRef}>
+			<div className="w-full" ref={containerRef}>
 				{currentView === "intro" && <Intro onStartQuiz={handleStartQuiz} />}
 				{currentView === "question" && !showResult && (
 					<Question
@@ -96,7 +96,6 @@ const Quiz = () => {
 				)}
 				{showResult && <Result score={score} quizData={quizData} />}
 			</div>
-			<Logo />
 		</>
 	);
 };

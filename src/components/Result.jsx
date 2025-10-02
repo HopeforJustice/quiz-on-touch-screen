@@ -16,13 +16,13 @@ const Result = ({ score, quizData }) => {
 
 	return (
 		<>
-			<div className="flex flex-col text-center items-center pt-[128px]">
+			<div className="flex flex-col text-center items-center pt-[80px]">
 				<p className="firstGsap | text-[41px] opacity-50">
 					Drum roll please...
 				</p>
-				<h2 className="secondGsap opacity-0 text-[141px] font-fk flex items-center gap-10">
+				<h2 className="secondGsap opacity-0 text-[110px] font-fk flex items-center gap-10">
 					YOU SCORED
-					<span className="font-apercu-bold bg-[#d21220] text-[94px] rounded-[30px] flex leading-none px-[20px] py-[10px] pt-[20px]">
+					<span className="font-apercu-bold bg-[#d21220] text-[74px] rounded-[30px] flex leading-none px-[20px] py-[10px] pt-[20px]">
 						{score}/{quizData.length}
 					</span>
 				</h2>
@@ -33,7 +33,7 @@ const Result = ({ score, quizData }) => {
 				<h3 className="secondGsap opacity-0 text-[64px] mt-[40px] mb-[30px] leading-none font-fk">
 					JOIN THE MOVEMENT
 				</h3>
-				<p className="secondGsap opacity-0 text-[33px] max-w-[700px] mb-[30px]">
+				<p className="secondGsap opacity-0 text-[26px] max-w-[700px] mb-[30px]">
 					Thank you for taking our quiz – for taking time to get more informed
 					about modern slavery and human trafficking. Find out how you can get
 					involved in the anti-trafficking movement by scanning the QR code.

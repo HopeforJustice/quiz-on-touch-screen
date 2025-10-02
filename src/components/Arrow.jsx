@@ -2,12 +2,13 @@ import React from "react";
 
 const Arrow = () => {
 	return (
-		<>
+		<div className="h-[20px]">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="41.877"
 				height="36.719"
 				viewBox="0 0 41.877 36.719"
+				className="h-full w-auto"
 			>
 				<g id="Layer_1-2" transform="translate(-52.026 -1.42)">
 					<path
@@ -32,7 +33,7 @@ const Arrow = () => {
 					/>
 				</g>
 			</svg>
-		</>
+		</div>
 	);
 };
 

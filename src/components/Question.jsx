@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import QuestionSvg from "./QuestionSvg";
 import Button from "./Button";
+import Logo from "./Logo";
 
 const Question = ({
 	questionText,
@@ -68,19 +69,19 @@ const Question = ({
 
 	return (
 		<>
-			<div className="question grid grid-cols-1 grid-rows-1 w-full h-full items-center justify-items-center">
-				<QuestionSvg className="row-start-1 col-start-1" />
+			<div className="question grid grid-cols-1 grid-rows-1 w-full h-full min-h-[100vh] items-center justify-items-center">
+				<QuestionSvg className="row-start-1 col-start-1 w-full h-full p-8" />
 				<div className="justify-self-start self-start row-start-1 col-start-1 flex justify-center items-center ml-[50px]">
-					<p className="text-[141px] font-fk ml-[15px] mt-[15px] w-[153px]">
+					<p className="text-[100px] w-[130px] absolute font-fk top-[15px] right-[22px] text-center">
 						{questionNumber}
 					</p>
 				</div>
-				<div className="box-border self-start row-start-1 col-start-1 mt-[217px] pt-[95px] px-[50px] w-full">
-					<div className="pl-[75px] pr-[100px] mb-[60px]">
-						<p className="text-[56px] font-apercu-bold">{questionText}</p>
+				<div className="box-border self-start row-start-1 col-start-1 mt-[180px] pt-[45px] px-[60px] w-full">
+					<div className="pl-[75px] pr-[50px] mb-[60px]">
+						<p className="text-[40px] font-apercu-bold">{questionText}</p>
 					</div>
 					{!showExplanation && (
-						<div className="px-[75px] flex flex-col gap-7">
+						<div className="px-[75px] flex flex-col gap-4">
 							{options.map((option, index) => (
 								<div
 									key={index}
@@ -88,10 +89,10 @@ const Question = ({
 									onClick={() => handleAnswerOptionClick(option)}
 									ref={(el) => (optionRefs.current[index] = el)}
 								>
-									<div className="text-[52px] ring-2 ring-white rounded-full min-w-[80px] min-h-[80px] inline-flex justify-center items-center relative">
+									<div className="text-[32px] ring-2 ring-white rounded-full min-w-[60px] min-h-[60px] inline-flex justify-center items-center relative">
 										<span className="mt-[5px]">{optionLetters[index]}</span>
 									</div>
-									<div className="text-[41px] mt-[3px]">{option}</div>
+									<div className="text-[26px] mt-[3px]">{option}</div>
 								</div>
 							))}
 						</div>
@@ -107,29 +108,30 @@ const Question = ({
 										className={`py-[15px] px-[32px] mx-[-32px] rounded-[21px] option flex gap-[40px] items-center ${optionClass}`}
 										ref={(el) => (optionRefs.current[index] = el)}
 									>
-										<div className="text-[52px] ring-2 ring-white rounded-full min-w-[80px] min-h-[80px] inline-flex justify-center items-center relative">
+										<div className="text-[32px] ring-2 ring-white rounded-full min-w-[60px] min-h-[60px] inline-flex justify-center items-center relative">
 											<span className="mt-[5px]">{optionLetters[index]}</span>
 										</div>
-										<div className="text-[41px] mt-[3px]">{option}</div>
+										<div className="text-[26px] mt-[3px]">{option}</div>
 									</div>
 								);
 							})}
 							<p
 								ref={explanationRef}
-								className="text-[36px] font-apercu my-12 opacity-0"
+								className="text-[24px] font-apercu my-12 opacity-0"
 							>
 								{explanationText}
 							</p>
 							<Button
 								text={isLastQuestion ? "See your score" : "Next question"}
 								onClick={handleNextQuestion}
-								className="mt-4 self-end opacity-0"
+								className="mt-4 self-start opacity-0"
 								ref={buttonRef}
 							/>
 						</div>
 					)}
 				</div>
 			</div>
+			<Logo />
 		</>
 	);
 };

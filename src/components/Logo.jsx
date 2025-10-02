@@ -11,7 +11,7 @@ const Logo = (onClick) => {
 			width="165.757"
 			height="219.881"
 			viewBox="0 0 165.757 219.881"
-			className="absolute bottom-[70px] left-[70px]"
+			className="absolute bottom-[55px] right-[40px] w-28 h-auto"
 		>
 			<defs>
 				<clipPath id="clip-path">

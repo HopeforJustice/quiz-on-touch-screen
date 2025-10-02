@@ -3,196 +3,348 @@ import React from "react";
 const QR = () => {
 	return (
 		<svg
-			version="1.1"
+			version="1.0"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlnsXlink="http://www.w3.org/1999/xlink"
-			x="0px"
-			y="0px"
-			viewBox="0 0 2400 2400"
-			style={{ enableBackground: "new 0 0 2400 2400" }}
+			viewBox="0 0 100 100"
+			enableBackground="new 0 0 100 100"
 			xmlSpace="preserve"
 		>
-			<style type="text/css">
-				{`
-        .st0 { fill: #000000; }
-      `}
-			</style>
-			<g>
-				<rect x="864" className="st0" width="96" height="96" />
-				<rect x="1344" className="st0" width="96" height="96" />
-				<rect x="1536" className="st0" width="96" height="96" />
-				<rect x="768" y="96" className="st0" width="192" height="96" />
-				<rect x="1056" y="96" className="st0" width="384" height="96" />
-				<rect x="864" y="192" className="st0" width="288" height="96" />
-				<rect x="768" y="288" className="st0" width="192" height="96" />
-				<rect x="1056" y="288" className="st0" width="96" height="96" />
-				<rect x="1248" y="288" className="st0" width="96" height="96" />
-				<rect x="1440" y="288" className="st0" width="192" height="96" />
-				<rect x="960" y="384" className="st0" width="96" height="96" />
-				<rect x="1152" y="384" className="st0" width="96" height="96" />
-				<rect x="1440" y="384" className="st0" width="192" height="96" />
-				<rect x="768" y="480" className="st0" width="96" height="96" />
-				<rect x="960" y="480" className="st0" width="96" height="96" />
-				<rect x="1248" y="480" className="st0" width="288" height="96" />
-				<rect x="768" y="576" className="st0" width="96" height="96" />
-				<rect x="960" y="576" className="st0" width="96" height="96" />
-				<rect x="1152" y="576" className="st0" width="96" height="96" />
-				<rect x="1344" y="576" className="st0" width="96" height="96" />
-				<rect x="1536" y="576" className="st0" width="96" height="96" />
-				<rect x="1152" y="672" className="st0" width="96" height="96" />
-				<rect x="1536" y="672" className="st0" width="96" height="96" />
-				<rect y="768" className="st0" width="480" height="96" />
-				<rect x="576" y="768" className="st0" width="480" height="96" />
-				<rect x="1152" y="768" className="st0" width="384" height="96" />
-				<rect x="1632" y="768" className="st0" width="96" height="96" />
-				<rect x="1824" y="768" className="st0" width="96" height="96" />
-				<rect x="2016" y="768" className="st0" width="96" height="96" />
-				<rect x="2208" y="768" className="st0" width="96" height="96" />
-				<rect x="96" y="864" className="st0" width="192" height="96" />
-				<rect x="480" y="864" className="st0" width="96" height="96" />
-				<rect x="864" y="864" className="st0" width="96" height="96" />
-				<rect x="1440" y="864" className="st0" width="288" height="96" />
-				<rect x="1824" y="864" className="st0" width="192" height="96" />
-				<rect x="2304" y="864" className="st0" width="96" height="96" />
-				<rect y="960" className="st0" width="96" height="96" />
-				<rect x="192" y="960" className="st0" width="96" height="96" />
-				<rect x="480" y="960" className="st0" width="288" height="96" />
-				<rect x="864" y="960" className="st0" width="96" height="96" />
-				<rect x="1056" y="960" className="st0" width="288" height="96" />
-				<rect x="1440" y="960" className="st0" width="96" height="96" />
-				<rect x="1632" y="960" className="st0" width="192" height="96" />
-				<rect x="1920" y="960" className="st0" width="96" height="96" />
-				<rect x="2112" y="960" className="st0" width="96" height="96" />
-				<rect y="1056" className="st0" width="288" height="96" />
-				<rect x="384" y="1056" className="st0" width="96" height="96" />
-				<rect x="768" y="1056" className="st0" width="384" height="96" />
-				<rect x="1344" y="1056" className="st0" width="96" height="96" />
-				<rect x="1536" y="1056" className="st0" width="192" height="96" />
-				<rect x="480" y="1152" className="st0" width="192" height="96" />
-				<rect x="864" y="1152" className="st0" width="96" height="96" />
-				<rect x="1056" y="1152" className="st0" width="96" height="96" />
-				<rect x="1344" y="1152" className="st0" width="192" height="96" />
-				<rect x="1728" y="1152" className="st0" width="384" height="96" />
-				<rect x="2208" y="1152" className="st0" width="192" height="96" />
-				<rect y="1248" className="st0" width="96" height="96" />
-				<rect x="288" y="1248" className="st0" width="192" height="96" />
-				<rect x="864" y="1248" className="st0" width="192" height="96" />
-				<rect x="1152" y="1248" className="st0" width="96" height="96" />
-				<rect x="1344" y="1248" className="st0" width="96" height="96" />
-				<rect x="1536" y="1248" className="st0" width="480" height="96" />
-				<rect y="1344" className="st0" width="96" height="96" />
-				<rect x="192" y="1344" className="st0" width="288" height="96" />
-				<rect x="576" y="1344" className="st0" width="96" height="96" />
-				<rect x="864" y="1344" className="st0" width="96" height="96" />
-				<rect x="1248" y="1344" className="st0" width="192" height="96" />
-				<rect x="1632" y="1344" className="st0" width="192" height="96" />
-				<rect x="1920" y="1344" className="st0" width="96" height="96" />
-				<rect x="2112" y="1344" className="st0" width="288" height="96" />
-				<rect y="1440" className="st0" width="96" height="96" />
-				<rect x="288" y="1440" className="st0" width="96" height="96" />
-				<rect x="480" y="1440" className="st0" width="96" height="96" />
-				<rect x="672" y="1440" className="st0" width="192" height="96" />
-				<rect x="960" y="1440" className="st0" width="96" height="96" />
-				<rect x="1152" y="1440" className="st0" width="192" height="96" />
-				<rect x="1632" y="1440" className="st0" width="96" height="96" />
-				<rect x="2208" y="1440" className="st0" width="192" height="96" />
-				<rect y="1536" className="st0" width="96" height="96" />
-				<rect x="288" y="1536" className="st0" width="96" height="96" />
-				<rect x="480" y="1536" className="st0" width="288" height="96" />
-				<rect x="864" y="1536" className="st0" width="96" height="96" />
-				<rect x="1152" y="1536" className="st0" width="960" height="96" />
-				<rect x="2304" y="1536" className="st0" width="96" height="96" />
-				<rect x="768" y="1632" className="st0" width="288" height="96" />
-				<rect x="1536" y="1632" className="st0" width="96" height="96" />
-				<rect x="1920" y="1632" className="st0" width="96" height="96" />
-				<rect x="2304" y="1632" className="st0" width="96" height="96" />
-				<rect x="768" y="1728" className="st0" width="192" height="96" />
-				<rect x="1056" y="1728" className="st0" width="192" height="96" />
-				<rect x="1344" y="1728" className="st0" width="96" height="96" />
-				<rect x="1536" y="1728" className="st0" width="96" height="96" />
-				<rect x="1728" y="1728" className="st0" width="96" height="96" />
-				<rect x="1920" y="1728" className="st0" width="96" height="96" />
-				<rect x="2112" y="1728" className="st0" width="288" height="96" />
-				<rect x="864" y="1824" className="st0" width="288" height="96" />
-				<rect x="1248" y="1824" className="st0" width="96" height="96" />
-				<rect x="1536" y="1824" className="st0" width="96" height="96" />
-				<rect x="1920" y="1824" className="st0" width="192" height="96" />
-				<rect x="768" y="1920" className="st0" width="96" height="96" />
-				<rect x="1056" y="1920" className="st0" width="288" height="96" />
-				<rect x="1536" y="1920" className="st0" width="576" height="96" />
-				<rect x="768" y="2016" className="st0" width="192" height="96" />
-				<rect x="1152" y="2016" className="st0" width="96" height="96" />
-				<rect x="1344" y="2016" className="st0" width="288" height="96" />
-				<rect x="1728" y="2016" className="st0" width="96" height="96" />
-				<rect x="1920" y="2016" className="st0" width="96" height="96" />
-				<rect x="2208" y="2016" className="st0" width="192" height="96" />
-				<rect x="768" y="2112" className="st0" width="96" height="96" />
-				<rect x="960" y="2112" className="st0" width="96" height="96" />
-				<rect x="1152" y="2112" className="st0" width="96" height="96" />
-				<rect x="1344" y="2112" className="st0" width="96" height="96" />
-				<rect x="1920" y="2112" className="st0" width="96" height="96" />
-				<rect x="2112" y="2112" className="st0" width="96" height="96" />
-				<rect x="2304" y="2112" className="st0" width="96" height="96" />
-				<rect x="768" y="2208" className="st0" width="96" height="96" />
-				<rect x="1152" y="2208" className="st0" width="288" height="96" />
-				<rect x="1536" y="2208" className="st0" width="576" height="96" />
-				<rect x="2208" y="2208" className="st0" width="96" height="96" />
-				<rect x="768" y="2304" className="st0" width="96" height="96" />
-				<rect x="960" y="2304" className="st0" width="96" height="96" />
-				<rect x="1440" y="2304" className="st0" width="96" height="96" />
-				<rect x="2112" y="2304" className="st0" width="288" height="96" />
-				<rect className="st0" width="672" height="96" />
-				<rect y="96" className="st0" width="96" height="480" />
-				<rect x="576" y="96" className="st0" width="96" height="480" />
-				<rect y="576" className="st0" width="672" height="96" />
-				<rect className="st0" width="672" height="96" />
-				<rect y="96" className="st0" width="96" height="96" />
-				<rect x="576" y="96" className="st0" width="96" height="96" />
-				<rect y="192" className="st0" width="96" height="96" />
-				<rect x="576" y="192" className="st0" width="96" height="96" />
-				<rect y="288" className="st0" width="96" height="96" />
-				<rect x="576" y="288" className="st0" width="96" height="96" />
-				<rect y="384" className="st0" width="96" height="96" />
-				<rect x="576" y="384" className="st0" width="96" height="96" />
-				<rect y="480" className="st0" width="96" height="96" />
-				<rect x="576" y="480" className="st0" width="96" height="96" />
-				<rect y="576" className="st0" width="672" height="96" />
-				<rect x="192" y="192" className="st0" width="288" height="288" />
-				<rect x="1728" className="st0" width="672" height="96" />
-				<rect x="1728" y="96" className="st0" width="96" height="480" />
-				<rect x="2304" y="96" className="st0" width="96" height="480" />
-				<rect x="1728" y="576" className="st0" width="672" height="96" />
-				<rect x="1728" className="st0" width="672" height="96" />
-				<rect x="1728" y="96" className="st0" width="96" height="96" />
-				<rect x="2304" y="96" className="st0" width="96" height="96" />
-				<rect x="1728" y="192" className="st0" width="96" height="96" />
-				<rect x="2304" y="192" className="st0" width="96" height="96" />
-				<rect x="1728" y="288" className="st0" width="96" height="96" />
-				<rect x="2304" y="288" className="st0" width="96" height="96" />
-				<rect x="1728" y="384" className="st0" width="96" height="96" />
-				<rect x="2304" y="384" className="st0" width="96" height="96" />
-				<rect x="1728" y="480" className="st0" width="96" height="96" />
-				<rect x="2304" y="480" className="st0" width="96" height="96" />
-				<rect x="1728" y="576" className="st0" width="672" height="96" />
-				<rect x="1920" y="192" className="st0" width="288" height="288" />
-				<rect y="1728" className="st0" width="672" height="96" />
-				<rect y="1824" className="st0" width="96" height="480" />
-				<rect x="576" y="1824" className="st0" width="96" height="480" />
-				<rect y="2304" className="st0" width="672" height="96" />
-				<rect y="1728" className="st0" width="672" height="96" />
-				<rect y="1824" className="st0" width="96" height="96" />
-				<rect x="576" y="1824" className="st0" width="96" height="96" />
-				<rect y="1920" className="st0" width="96" height="96" />
-				<rect x="576" y="1920" className="st0" width="96" height="96" />
-				<rect y="2016" className="st0" width="96" height="96" />
-				<rect x="576" y="2016" className="st0" width="96" height="96" />
-				<rect y="2112" className="st0" width="96" height="96" />
-				<rect x="576" y="2112" className="st0" width="96" height="96" />
-				<rect y="2208" className="st0" width="96" height="96" />
-				<rect x="576" y="2208" className="st0" width="96" height="96" />
-				<rect y="2304" className="st0" width="672" height="96" />
-				<rect x="192" y="1920" className="st0" width="288" height="288" />
-			</g>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
+				version="1.1"
+				width="100"
+				height="100"
+				viewBox="0 0 2000 2000"
+				x="0"
+				y="0"
+				shapeRendering="crispEdges"
+			>
+				<defs />
+				<rect x="0" y="0" width="2000" height="2000" fill="#ffffff" />
+				<rect x="840" y="200" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="200" width="64" height="64" fill="#000000" />
+				<rect x="776" y="264" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="264" width="64" height="64" fill="#000000" />
+				<rect x="712" y="328" width="64" height="64" fill="#000000" />
+				<rect x="904" y="328" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="328" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="328" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="328" width="64" height="64" fill="#000000" />
+				<rect x="776" y="392" width="64" height="64" fill="#000000" />
+				<rect x="968" y="392" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="392" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="392" width="64" height="64" fill="#000000" />
+				<rect x="776" y="456" width="64" height="64" fill="#000000" />
+				<rect x="968" y="456" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="456" width="64" height="64" fill="#000000" />
+				<rect x="840" y="520" width="64" height="64" fill="#000000" />
+				<rect x="904" y="520" width="64" height="64" fill="#000000" />
+				<rect x="968" y="520" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="520" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="520" width="64" height="64" fill="#000000" />
+				<rect x="712" y="584" width="64" height="64" fill="#000000" />
+				<rect x="840" y="584" width="64" height="64" fill="#000000" />
+				<rect x="968" y="584" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="584" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="584" width="64" height="64" fill="#000000" />
+				<rect x="712" y="648" width="64" height="64" fill="#000000" />
+				<rect x="904" y="648" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="648" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="648" width="64" height="64" fill="#000000" />
+				<rect x="200" y="712" width="64" height="64" fill="#000000" />
+				<rect x="264" y="712" width="64" height="64" fill="#000000" />
+				<rect x="328" y="712" width="64" height="64" fill="#000000" />
+				<rect x="456" y="712" width="64" height="64" fill="#000000" />
+				<rect x="520" y="712" width="64" height="64" fill="#000000" />
+				<rect x="584" y="712" width="64" height="64" fill="#000000" />
+				<rect x="648" y="712" width="64" height="64" fill="#000000" />
+				<rect x="712" y="712" width="64" height="64" fill="#000000" />
+				<rect x="968" y="712" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="712" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="712" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="712" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="712" width="64" height="64" fill="#000000" />
+				<rect x="1608" y="712" width="64" height="64" fill="#000000" />
+				<rect x="456" y="776" width="64" height="64" fill="#000000" />
+				<rect x="520" y="776" width="64" height="64" fill="#000000" />
+				<rect x="648" y="776" width="64" height="64" fill="#000000" />
+				<rect x="776" y="776" width="64" height="64" fill="#000000" />
+				<rect x="904" y="776" width="64" height="64" fill="#000000" />
+				<rect x="968" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="776" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="776" width="64" height="64" fill="#000000" />
+				<rect x="392" y="840" width="64" height="64" fill="#000000" />
+				<rect x="584" y="840" width="64" height="64" fill="#000000" />
+				<rect x="840" y="840" width="64" height="64" fill="#000000" />
+				<rect x="904" y="840" width="64" height="64" fill="#000000" />
+				<rect x="968" y="840" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="840" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="840" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="840" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="840" width="64" height="64" fill="#000000" />
+				<rect x="200" y="904" width="64" height="64" fill="#000000" />
+				<rect x="264" y="904" width="64" height="64" fill="#000000" />
+				<rect x="328" y="904" width="64" height="64" fill="#000000" />
+				<rect x="648" y="904" width="64" height="64" fill="#000000" />
+				<rect x="712" y="904" width="64" height="64" fill="#000000" />
+				<rect x="776" y="904" width="64" height="64" fill="#000000" />
+				<rect x="840" y="904" width="64" height="64" fill="#000000" />
+				<rect x="968" y="904" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="904" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="904" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="904" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="904" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="904" width="64" height="64" fill="#000000" />
+				<rect x="200" y="968" width="64" height="64" fill="#000000" />
+				<rect x="264" y="968" width="64" height="64" fill="#000000" />
+				<rect x="456" y="968" width="64" height="64" fill="#000000" />
+				<rect x="520" y="968" width="64" height="64" fill="#000000" />
+				<rect x="584" y="968" width="64" height="64" fill="#000000" />
+				<rect x="648" y="968" width="64" height="64" fill="#000000" />
+				<rect x="840" y="968" width="64" height="64" fill="#000000" />
+				<rect x="904" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1608" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="968" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="968" width="64" height="64" fill="#000000" />
+				<rect x="264" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="392" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="520" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="648" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1032" width="64" height="64" fill="#000000" />
+				<rect x="200" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="328" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="392" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="584" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1096" width="64" height="64" fill="#000000" />
+				<rect x="264" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="328" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="456" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="520" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="648" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="1160" width="64" height="64" fill="#000000" />
+				<rect x="200" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="392" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="456" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="584" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1608" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1224" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1288" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1352" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1416" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1352" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="1608" y="1480" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1288" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1416" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1544" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="968" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="1160" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1608" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="904" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1096" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1672" width="64" height="64" fill="#000000" />
+				<rect x="712" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="776" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="840" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1032" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1224" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1480" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1544" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1672" y="1736" width="64" height="64" fill="#000000" />
+				<rect x="1736" y="1736" width="64" height="64" fill="#000000" />
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="200"
+					y="200"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M21.2-0.1C9.5-0.1-0.1,9.5-0.1,21.2v78.8v100v100v100v100v100v78.8c0,11.7,9.5,21.3,21.3,21.3h657.6  c11.7,0,21.3-9.5,21.3-21.3V600V500V400V300V200v-100V21.2c0-11.7-9.5-21.3-21.3-21.3H21.2z M600,200v100v100v100v87.8  c0,6.8-5.5,12.2-12.2,12.2H112.2c-6.8,0-12.2-5.5-12.2-12.2V500V400V300V200v-87.8c0-6.8,5.5-12.2,12.2-12.2h475.6  c6.8,0,12.2,5.5,12.2,12.2V200z"
+					/>
+				</svg>
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="200"
+					y="200"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M500,400V300v-78.8c0-11.7-9.5-21.3-21.3-21.3H221.2c-11.7,0-21.3,9.5-21.3,21.3V300v100v78.8    c0,11.7,9.5,21.3,21.3,21.3h257.5c11.7,0,21.3-9.5,21.3-21.3V400z"
+					/>
+				</svg>
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="1352"
+					y="200"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M21.2-0.1C9.5-0.1-0.1,9.5-0.1,21.2v78.8v100v100v100v100v100v78.8c0,11.7,9.5,21.3,21.3,21.3h657.6  c11.7,0,21.3-9.5,21.3-21.3V600V500V400V300V200v-100V21.2c0-11.7-9.5-21.3-21.3-21.3H21.2z M600,200v100v100v100v87.8  c0,6.8-5.5,12.2-12.2,12.2H112.2c-6.8,0-12.2-5.5-12.2-12.2V500V400V300V200v-87.8c0-6.8,5.5-12.2,12.2-12.2h475.6  c6.8,0,12.2,5.5,12.2,12.2V200z"
+					/>
+				</svg>
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="1352"
+					y="200"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M500,400V300v-78.8c0-11.7-9.5-21.3-21.3-21.3H221.2c-11.7,0-21.3,9.5-21.3,21.3V300v100v78.8    c0,11.7,9.5,21.3,21.3,21.3h257.5c11.7,0,21.3-9.5,21.3-21.3V400z"
+					/>
+				</svg>
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="200"
+					y="1352"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M21.2-0.1C9.5-0.1-0.1,9.5-0.1,21.2v78.8v100v100v100v100v100v78.8c0,11.7,9.5,21.3,21.3,21.3h657.6  c11.7,0,21.3-9.5,21.3-21.3V600V500V400V300V200v-100V21.2c0-11.7-9.5-21.3-21.3-21.3H21.2z M600,200v100v100v100v87.8  c0,6.8-5.5,12.2-12.2,12.2H112.2c-6.8,0-12.2-5.5-12.2-12.2V500V400V300V200v-87.8c0-6.8,5.5-12.2,12.2-12.2h475.6  c6.8,0,12.2,5.5,12.2,12.2V200z"
+					/>
+				</svg>
+				<svg
+					version="1.1"
+					id="Ebene_1"
+					x="200"
+					y="1352"
+					viewBox="0 0 700 700"
+					style={{ enableBackground: "new 0 0 700 700" }}
+					xmlSpace="preserve"
+					width="448"
+					height="448"
+					shapeRendering="auto"
+				>
+					<path
+						fill="#000000"
+						d="M500,400V300v-78.8c0-11.7-9.5-21.3-21.3-21.3H221.2c-11.7,0-21.3,9.5-21.3,21.3V300v100v78.8    c0,11.7,9.5,21.3,21.3,21.3h257.5c11.7,0,21.3-9.5,21.3-21.3V400z"
+					/>
+				</svg>
+			</svg>
 		</svg>
 	);
 };
