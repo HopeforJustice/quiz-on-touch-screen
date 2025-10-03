@@ -20,7 +20,7 @@ const Intro = (props) => {
 					<br />
 					know about
 					<br />
-					modern slavery?
+					Human Trafficking?
 				</h1>
 			</div>
 

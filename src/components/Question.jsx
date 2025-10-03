@@ -76,9 +76,11 @@ const Question = ({
 						{questionNumber}
 					</p>
 				</div>
-				<div className="box-border self-start row-start-1 col-start-1 mt-[180px] pt-[45px] px-[60px] w-full">
+				<div className="box-border self-start row-start-1 col-start-1 mt-[60px] pt-[45px] pl-[30px] pr-[120px] w-full">
 					<div className="pl-[75px] pr-[50px] mb-[60px]">
-						<p className="text-[40px] font-apercu-bold">{questionText}</p>
+						<p className="text-[34px] pr-[40px] font-apercu-bold">
+							{questionText}
+						</p>
 					</div>
 					{!showExplanation && (
 						<div className="px-[75px] flex flex-col gap-4">
