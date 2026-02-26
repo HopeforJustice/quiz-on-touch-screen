@@ -24,13 +24,11 @@ const Quiz = (props) => {
 				containerRef.current,
 				{ opacity: 0, x: -100 },
 				{ opacity: 1, x: 0, duration: 0.5 },
-				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		} else if (currentView === "question") {
 			gsap.fromTo(
 				containerRef.current,
 				{ opacity: 0, x: 100 },
-				{ opacity: 1, x: 0, duration: 0.5 },
 				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		}
@@ -46,7 +44,6 @@ const Quiz = (props) => {
 				gsap.fromTo(
 					containerRef.current,
 					{ opacity: 0, x: 100 },
-					{ opacity: 1, x: 0, duration: 0.5 },
 					{ opacity: 1, x: 0, duration: 0.5 },
 				);
 			},
@@ -75,7 +72,6 @@ const Quiz = (props) => {
 			gsap.fromTo(
 				containerRef.current,
 				{ opacity: 0, x: 100 },
-				{ opacity: 1, x: 0, duration: 0.5 },
 				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		} else {

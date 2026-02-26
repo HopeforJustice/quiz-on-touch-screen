@@ -42,7 +42,7 @@ const Intro = (props) => {
 								src="/img/tim-mossholder-Kx060cRsmt0-unsplash.jpg"
 							/>
 						</div>
-						<div className="bg-sfa-blue relative -left-[2px] mt-[-450px] max-w-[90%] rounded-tr-[60px] py-20 pl-10">
+						<div className="bg-sfa-blue relative -left-[2px] mt-[-350px] max-w-[90%] rounded-tr-[60px] py-20 pl-10">
 							<h2 className="font-sfabody uppercase tracking-widest opacity-50 text-[30px] mb-10">
 								Test your knowledge
 							</h2>
