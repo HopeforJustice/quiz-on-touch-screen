@@ -9,7 +9,7 @@ const Video = () => {
 			loop
 			autoPlay
 		>
-			<source src="./intro-vid.mp4" />
+			<source src="./intro-video.mp4" />
 		</video>
 	);
 };
