@@ -1,4 +1,4 @@
-const quizData = [
+export const quizData = [
 	{
 		questionText:
 			"How many people are estimated to be victims of modern slavery globally?",
@@ -49,5 +49,3 @@ const quizData = [
 	},
 	// Add more questions here
 ];
-
-export default quizData;

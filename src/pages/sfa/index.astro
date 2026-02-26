@@ -1,0 +1,66 @@
+---
+import Quiz from "../../components/Quiz";
+---
+
+<html class="p-0 m-0 box-border overflow-hidden" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Quiz on touch screen (SFA)</title>
+		<link rel="stylesheet" href="https://use.typekit.net/dlv0xph.css" />
+	</head>
+	<body class="bg-neutral-900 text-white font-apercu">
+		<div id="quiz-wrapper">
+			<Quiz client:only="react" branding="sfa" />
+		</div>
+
+		<script>
+			function scaleQuiz() {
+				const wrapper = document.getElementById("quiz-wrapper");
+				if (window.innerWidth >= 1081 || window.innerHeight >= 1921) {
+					const scaleX = window.innerWidth / 1080;
+					const scaleY = window.innerHeight / 1920;
+					const scale = Math.min(scaleX, scaleY);
+					wrapper.style.transform = `scale(${scale})`;
+					wrapper.style.transformOrigin = "center center";
+				} else {
+					wrapper.style.transform = "";
+					wrapper.style.transformOrigin = "";
+				}
+			}
+
+			scaleQuiz();
+			window.addEventListener("resize", scaleQuiz);
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#quiz-wrapper {
+		width: 1080px;
+		height: 1920px;
+		overflow: hidden;
+		flex-shrink: 0;
+		background-color: #142c3a; /* sfa-blue */
+	}
+
+	#quiz-wrapper::-webkit-scrollbar {
+		display: none;
+	}
+</style>
