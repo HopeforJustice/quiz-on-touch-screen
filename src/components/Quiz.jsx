@@ -20,13 +20,13 @@ const Quiz = () => {
 			gsap.fromTo(
 				containerRef.current,
 				{ opacity: 0, x: -100 },
-				{ opacity: 1, x: 0, duration: 0.5 }
+				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		} else if (currentView === "question") {
 			gsap.fromTo(
 				containerRef.current,
 				{ opacity: 0, x: 100 },
-				{ opacity: 1, x: 0, duration: 0.5 }
+				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		}
 	}, [currentView]);
@@ -41,7 +41,7 @@ const Quiz = () => {
 				gsap.fromTo(
 					containerRef.current,
 					{ opacity: 0, x: 100 },
-					{ opacity: 1, x: 0, duration: 0.5 }
+					{ opacity: 1, x: 0, duration: 0.5 },
 				);
 			},
 		});
@@ -69,7 +69,7 @@ const Quiz = () => {
 			gsap.fromTo(
 				containerRef.current,
 				{ opacity: 0, x: 100 },
-				{ opacity: 1, x: 0, duration: 0.5 }
+				{ opacity: 1, x: 0, duration: 0.5 },
 			);
 		} else {
 			setShowResult(true);
@@ -78,7 +78,7 @@ const Quiz = () => {
 
 	return (
 		<>
-			<div className="w-[1080px] h-[1920px]" ref={containerRef}>
+			<div className="max-w-[1080px] h-[1920px]" ref={containerRef}>
 				{currentView === "intro" && <Intro onStartQuiz={handleStartQuiz} />}
 				{currentView === "question" && !showResult && (
 					<Question
