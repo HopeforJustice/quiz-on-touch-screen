@@ -50,10 +50,11 @@ const Quiz = (props) => {
 		});
 	};
 
-	const handleAnswerOptionClick = (selectedOption) => {
-		setSelectedOption(selectedOption);
-		if (selectedOption === quizData[currentQuestionIndex].correctAnswer) {
-			setScore(score + 1);
+	const handleAnswerOptionClick = (option) => {
+		if (selectedOption !== null) return; // Already answered this question
+		setSelectedOption(option);
+		if (option === quizData[currentQuestionIndex].correctAnswer) {
+			setScore((prev) => prev + 1);
 		}
 
 		// Delay to show the highlight before hiding incorrect options
