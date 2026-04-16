@@ -9,7 +9,7 @@ export const quizData = [
 			"According to the latest Global Estimates of Modern Slavery, there are 49.6 million people living in modern slavery. But this is a hidden crime and many cases go unreported, so the actual number is believed to be much higher.",
 	},
 	{
-		questionText: "How many victims of modern slavery are children?",
+		questionText: "How many victims of modern slavery are children globally?",
 		questionNumber: "02",
 		options: ["1 in 10", "1 in 8", "1 in 4", "1 in 2"],
 		correctAnswer: "1 in 4",
@@ -23,10 +23,11 @@ export const quizData = [
 		options: ["Albanian", "Polish", "British", "Hungarian"],
 		correctAnswer: "British",
 		explanationText:
-			"The most common nationality referred to the Home Office last year was British (25%) – the highest number of UK nationals referred since the National Referral Mechanism began in 2009. The second most commonly referred nationality was Albanian (24%) and third was Vietnamese (6%).",
+			"In the UK, the most common nationality of potential victims identified and referred for support last year was British (22%). The second highest was Eritrean (13%) and third was Vietnamese (9%)",
 	},
 	{
-		questionText: "What percentage of victims of modern slavery are female?",
+		questionText:
+			"What percentage of victims of modern slavery globally are female?",
 		questionNumber: "04",
 		options: ["33%", "54%", "70%", "82%"],
 		correctAnswer: "54%",
@@ -40,7 +41,7 @@ export const quizData = [
 			"Slavery does not exist in the UK",
 			"There are more people trapped in slavery today than ever before",
 			"You cannot subject a spouse to slavery",
-			"Fashion is most at risk of modern slavery imported into the G20",
+			"Slavery is only a problem in sweatshops in foreign countries",
 		],
 		correctAnswer:
 			"There are more people trapped in slavery today than ever before",
