@@ -15,6 +15,7 @@ const Quiz = (props) => {
 	const [showResult, setShowResult] = useState(false);
 	const [showExplanation, setShowExplanation] = useState(false);
 	const containerRef = useRef(null);
+	const hasAnswered = useRef(false);
 	const { branding } = props;
 	const quizData = branding === "hfj" ? hfjQuizData : sfaQuizData;
 
@@ -50,10 +51,12 @@ const Quiz = (props) => {
 		});
 	};
 
-	const handleAnswerOptionClick = (selectedOption) => {
-		setSelectedOption(selectedOption);
-		if (selectedOption === quizData[currentQuestionIndex].correctAnswer) {
-			setScore(score + 1);
+	const handleAnswerOptionClick = (option) => {
+		if (hasAnswered.current) return;
+		hasAnswered.current = true;
+		setSelectedOption(option);
+		if (option === quizData[currentQuestionIndex].correctAnswer) {
+			setScore((prev) => prev + 1);
 		}
 
 		// Delay to show the highlight before hiding incorrect options
@@ -63,6 +66,7 @@ const Quiz = (props) => {
 	};
 
 	const handleNextQuestion = () => {
+		hasAnswered.current = false;
 		setShowExplanation(false);
 		setSelectedOption(null);
 
