@@ -5,7 +5,8 @@ import IntroSvg from "./IntroSvg";
 
 const Intro = (props) => {
 	const buttonStyles = "absolute top-[770px] right-[100px] z-[100]";
-	const { branding } = props;
+	const { branding, region } = props;
+	const topicText = region === "us" ? "human trafficking?" : "modern slavery?";
 	return (
 		<>
 			{branding === "hfj" && (
@@ -23,7 +24,7 @@ const Intro = (props) => {
 							<br />
 							know about
 							<br />
-							modern slavery?
+							{topicText}
 						</h1>
 					</div>
 					<Button
@@ -51,7 +52,7 @@ const Intro = (props) => {
 								<br />
 								know about
 								<br />
-								modern slavery?
+								{topicText}
 							</h1>
 							<Button
 								text="Take the quiz"

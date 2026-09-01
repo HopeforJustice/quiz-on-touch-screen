@@ -4,6 +4,7 @@ import Intro from "./Intro";
 import Question from "./Question";
 import Logo from "./Logo";
 import { quizData as hfjQuizData } from "../utils/quizData";
+import { usQuizData } from "../utils/usQuizData";
 import { sfaQuizData } from "../utils/sfaQuizData";
 import Result from "./Result";
 
@@ -17,7 +18,20 @@ const Quiz = (props) => {
 	const containerRef = useRef(null);
 	const hasAnswered = useRef(false);
 	const { branding } = props;
-	const quizData = branding === "hfj" ? hfjQuizData : sfaQuizData;
+
+	// Allow the US question set to be selected via a URL param, e.g. ?region=us
+	// without changing branding/layout.
+	const region =
+		typeof window !== "undefined"
+			? new URLSearchParams(window.location.search).get("region")
+			: null;
+
+	const quizData =
+		branding === "hfj"
+			? region === "us"
+				? usQuizData
+				: hfjQuizData
+			: sfaQuizData;
 
 	useEffect(() => {
 		if (currentView === "intro") {
@@ -89,7 +103,11 @@ const Quiz = (props) => {
 				<>
 					<div className="w-[1080px] h-[1920px]" ref={containerRef}>
 						{currentView === "intro" && (
-							<Intro branding={branding} onStartQuiz={handleStartQuiz} />
+							<Intro
+								branding={branding}
+								region={region}
+								onStartQuiz={handleStartQuiz}
+							/>
 						)}
 						{currentView === "question" && !showResult && (
 							<Question
@@ -120,7 +138,11 @@ const Quiz = (props) => {
 						ref={containerRef}
 					>
 						{currentView === "intro" && (
-							<Intro branding={branding} onStartQuiz={handleStartQuiz} />
+							<Intro
+								branding={branding}
+								region={region}
+								onStartQuiz={handleStartQuiz}
+							/>
 						)}
 						{currentView === "question" && !showResult && (
 							<Question
