@@ -18,17 +18,26 @@ export const quizData = [
 	},
 	{
 		questionText:
-			"What is the most common nationality of a modern slavery victim identified in the UK?",
+			"What is the most common nationality of a modern slavery victim in Scotland?",
 		questionNumber: "03",
-		options: ["Albanian", "Polish", "British", "Hungarian"],
-		correctAnswer: "British",
+		options: ["Polish", "British", "Vietnamese", "Hungarian"],
+		correctAnswer: "Vietnamese",
 		explanationText:
-			"In the UK, the most common nationality of potential victims identified and referred for support last year was British (22%). The second highest was Eritrean (13%) and third was Vietnamese (9%)",
+			"In Scotland, the most common nationality of potential victims identified and referred for support last year was Vietnamese (31.9%). The second highest was British (13.5%) and third was Eritrean (6.8%)",
+	},
+	{
+		questionText:
+			"How many different nationalities of modern slavery victims, including dual nationalities, were recorded in Scotland last year?",
+		questionNumber: "04",
+		options: ["15", "22", "53", "96"],
+		correctAnswer: "96",
+		explanationText:
+			"There were 96 different nationalities recorded in Scotland in 2025. Victims were identified in Scotland from Europe, North and South America, Africa, Asia and Australia.",
 	},
 	{
 		questionText:
 			"What percentage of victims of modern slavery globally are female?",
-		questionNumber: "04",
+		questionNumber: "05",
 		options: ["33%", "54%", "70%", "82%"],
 		correctAnswer: "54%",
 		explanationText:
@@ -36,9 +45,9 @@ export const quizData = [
 	},
 	{
 		questionText: "Which of these statements is true?",
-		questionNumber: "05",
+		questionNumber: "06",
 		options: [
-			"Slavery does not exist in the UK",
+			"Slavery does not exist in Scotland",
 			"There are more people trapped in slavery today than ever before",
 			"You cannot subject a spouse to slavery",
 			"Slavery is only a problem in sweatshops in foreign countries",
