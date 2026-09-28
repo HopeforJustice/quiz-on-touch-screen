@@ -125,7 +125,12 @@ const Quiz = (props) => {
 							/>
 						)}
 						{showResult && (
-							<Result branding={branding} score={score} quizData={quizData} />
+							<Result
+								branding={branding}
+								score={score}
+								quizData={quizData}
+								region={region}
+							/>
 						)}
 					</div>
 					<Logo branding={branding} />

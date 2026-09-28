@@ -3,7 +3,7 @@ import QR from "./QR";
 import { gsap } from "gsap";
 import Button from "./Button";
 
-const Result = ({ score, quizData, branding }) => {
+const Result = ({ score, quizData, branding, region = null }) => {
 	useEffect(() => {
 		const timeline = gsap.timeline();
 
@@ -30,7 +30,7 @@ const Result = ({ score, quizData, branding }) => {
 						</h2>
 						{/* svg */}
 						<div className="secondGsap opacity-0 bg-white rounded-[16px] w-[338px] h-[338px] p-[25px]">
-							<QR />
+							<QR region={region} />
 						</div>
 						<h3 className="secondGsap opacity-0 text-[64px] mt-[40px] mb-[30px] leading-none font-fk">
 							JOIN THE MOVEMENT
