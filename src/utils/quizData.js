@@ -23,7 +23,7 @@ export const quizData = [
 		options: ["Polish", "British", "Vietnamese", "Hungarian"],
 		correctAnswer: "Vietnamese",
 		explanationText:
-			"In Scotland, the most common nationality of potential victims identified and referred for support last year was Vietnamese (31.9%). The second highest was British (13.5%) and third was Eritrean (6.8%)",
+			"In Scotland, the most common nationality of potential victims identified and referred for support last year was Vietnamese (31.9%). The second highest was British (13.5%), and third was Eritrean (6.8%).",
 	},
 	{
 		questionText:
