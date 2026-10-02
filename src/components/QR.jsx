@@ -1,5 +1,4 @@
-import React from "react";
-import Image from "next/image";
+import qrUK from "../../public/img/default-qr-uk.png";
 
 const QR = ({ region = null }) => {
 	if (region === "us") {
@@ -198,9 +197,7 @@ const QR = ({ region = null }) => {
 			</svg>
 		);
 	} else {
-		return (
-			<Image src="/default-qr-uk.png" alt="QR Code" width={672} height={672} />
-		);
+		return <img src={qrUK.src} alt="QR Code" width={672} height={672} />;
 	}
 };
 
